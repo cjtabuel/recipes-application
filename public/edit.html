@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Edit Recipe</title>
+</head>
+<body>
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-sm navbar-light bg-light shadow-lg p-2 mb-4" id="main-nav">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand lead text-muted px-4">
+        Recipes
+      </a>
+      <button class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse px-4" id="navbarCollapse">
+        <ul class="navbar-nav ml-auto lead">
+          <li class="nav-item">
+            <a href="index.html" class="nav-link">Home</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+  
+  <!-- body container -->
+  
+  <div class="container my-5">
+    <form class="my-4">
+      <!-- recipe title -->
+      <div class="form-group">
+        <label class="h6">Recipe Name</label>
+        <input id="recipe-title" type="text" class="form-control" placeholder="Recipe name">
+      </div>
+      <!-- textarea -->
+      <div class="form-group">
+        <label class="h6">Instructions</label>
+        <textarea id="recipe-instructions" rows="10" class="form-control" placeholder="Add instructions here"></textarea>
+      </div>
+      <div class="form-group">
+        <label id="created-at" class="text-muted my-2"></label>
+      </div>
+    </form>
+
+    <hr class="my-4">
+
+    <!-- ingredients -->
+    <div class="my-4">
+      <label class="h4 mb-4">Ingredients</label>
+      <div class="container" id="recipe-ingredients">
+        <ul class="list-group" id="ingredients-list">
+        </ul>
+      </div>
+    </div>
+
+    <!-- add ingredients -->
+    <div class="container my-4">
+      <form class="row" id="ingredients-form">
+        <div class="col-sm-8">
+          <input id="ingredient-name" type="text" class="form-control" name="newIngredient" placeholder="Add ingredient">
+        </div>
+        <div class="col-sm-4">
+          <button id="add-ingredient" class="btn btn-info form-control" type="submit">Add ingredient</button>
+        </div>
+      </form>
+    </div>
+
+    <!-- alert -->
+    <div id="ingredients-alert" class="container">
+
+    </div>
+
+    <hr class="my-4">
+
+    <!-- danger zone -->
+    <div class="my-4">
+      <label class="h4">Danger Zone</label>
+      <br>
+      <button id="delete-recipe" class="btn btn-danger">Delete Recipe</button>
+    </div>
+
+  </div>
+
+
+  <script src="/scripts/edit-bundle.js"></script>
+</body>
+</html>

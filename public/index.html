@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Recipe App</title>
+</head>
+<body>
+  
+  <!-- nav bar -->
+  <nav class="navbar navbar-expand-md navbar-light bg-light shadow-lg p-2 mb-4" id="main-nav">
+    <div class="container-fluid">
+      <a href="index.html" class="navbar-brand lead text-muted px-4">
+        Recipes
+      </a>
+    </div>
+  </nav>
+
+  <!-- body container -->
+  <div class="container my-5">
+    <!-- search bar -->
+    <div class="my-4">
+      <div class="input-group">
+        <input id="search-recipe" type="text" class="form-control" placeholder="Search a recipe">
+      </div>
+    </div>
+
+    <!-- recipe list -->
+    <div id="recipes" class="my-4">
+
+    </div>
+
+    <!-- add recipe btn -->
+    <div class="mt-4">
+      <button id="add-recipe" class="btn btn-primary btn-block" type="button">Add Recipe</button>
+    </div>
+  </div>
+  
+  <script src="/scripts/index-bundle.js"></script>
+</body>
+</html>

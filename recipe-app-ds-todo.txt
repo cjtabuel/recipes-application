@@ -1,0 +1,33 @@
+recipe app data structure
+
+recipe cards in index:
+
+for each individual card
+	- recipe title
+	- summary (you have all/some/none ingredients)
+
+edit recipe card details:
+	- recipe title (input)
+	- text area for adding/modifying instructions
+
+	- ingredients section
+		- individual ingredients
+			- checkbox (haveRecipe)
+			- remove button
+		- input field (typing ingredient name)
+		- button for adding ingredient
+	
+	- danger zone
+		- delete recipe button
+
+data structure for individual recipe
+	- each recipe will be an object
+
+{
+ id, (uuid)
+ title, (string)
+ instructions, (string)
+ ingredients: [ { ingredientName, haveIngredient } ]
+
+}
+
